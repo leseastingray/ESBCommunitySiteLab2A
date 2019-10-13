@@ -1,0 +1,34 @@
+﻿@model IEnumerable<ESBCommunitySite.Models.ContactInfo>
+
+@{
+    Layout = null;
+}
+<! DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>MailBox</title>
+</head>
+<body>
+    <h2>Mailbox</h2>
+    <table>
+        <thead>
+            <tr>Recipient</tr>
+            <tr>Message Content</tr>
+            <tr>Sender</tr>
+        </thead>
+        <tbody>
+            @foreach (ESBCommunitySite.Models.ContactInfo r in Model)
+            {
+                <tr>
+                    <td>@r.Recipient</td>
+                    <td>@r.MessageText</td>
+                    <td>@r.Sender</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</body>
+</html>
+

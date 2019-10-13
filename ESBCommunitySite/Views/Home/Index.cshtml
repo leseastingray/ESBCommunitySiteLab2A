@@ -1,8 +1,25 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+   Layout = null;
 }
 
-<div class="text-center">
-    <h1>Eugene Symphonic Band Community Website</h1>
-    <p>Welcome!</p>
-</div>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width" />
+        <title>Home</title>
+    </head>
+    <body>
+        <nav>
+            <a asp-action="History">History</a>
+            <a asp-action="Contact">Contact</a>
+            <a asp-action="Info">Information</a>
+            <a asp-action="Location">Location</a>
+            <a asp-action="Roster">Roster</a>
+        </nav>
+        <div class="text-center">
+            <h1>Eugene Symphonic Band Community Website</h1>
+            <p>Welcome!</p>
+        </div>
+        <div>Under Construction</div>
+    </body>
+</html>

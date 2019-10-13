@@ -20,16 +20,26 @@ namespace ESBCommunitySite.Controllers
         {
             return View();
         }
-        // Contact method
+        // Contact get method
+        [HttpGet]
         public ViewResult Contact()
         {
             return View();
         }
-
-        public IActionResult Privacy()
+        // Contact post method
+        [HttpPost]
+        public ViewResult Contact(ContactInfo contactInfo)
         {
+            // stores contact messages
+            MailBox.AddMail(contactInfo);
             return View();
         }
+
+        public ViewResult ShowMail()
+        {
+            return View(MailBox.Mail);
+        }
+
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()

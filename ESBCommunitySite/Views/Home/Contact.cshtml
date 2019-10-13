@@ -1,7 +1,33 @@
-﻿
+﻿@model ESBCommunitySite.Models.ContactInfo
+
 @{
     ViewData["Title"] = "Contact";
+    Layout = null;
 }
+<! DOCTYPE html>
 
-<h1>Contact</h1>
-
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Contact</title>
+</head>
+<body>
+    <form asp-action="Contact" method="post">
+        <div>
+            <label asp-for="Recipient">Recipient Name</label>
+            <input asp-for="Recipient" />
+        </div>
+        <div>
+            <label asp-for="MessageText">Message Text</label>
+            <textarea asp-for="MessageText"></textarea>
+        </div>
+        <div>
+            <label asp-for="Sender">Sender Name</label>
+            <input asp-for="Sender" />
+        </div>
+        <button type="submit">Send</button>
+    </form>
+    <div>Click <a asp-action="ShowMail">here to view your mailbox of sent and
+        received messages</a></div>
+</body>
+</html>
