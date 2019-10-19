@@ -9,26 +9,29 @@
 <head>
     <meta name="viewport" content="width=device-width" />
     <title>MailBox</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
 </head>
 <body>
-    <h2>Mailbox</h2>
-    <table>
-        <thead>
-            <tr>Recipient</tr>
-            <tr>Message Content</tr>
-            <tr>Sender</tr>
-        </thead>
-        <tbody>
-            @foreach (ESBCommunitySite.Models.ContactInfo r in Model)
-            {
-                <tr>
-                    <td>@r.Recipient</td>
-                    <td>@r.MessageText</td>
-                    <td>@r.Sender</td>
-                </tr>
-            }
-        </tbody>
-    </table>
+    <div class="panel-body">
+        <h2>Mailbox</h2>
+        <table class="table table-lg table-striped table-bordered">
+            <thead>
+                <tr>Recipient</tr>
+                <tr>Message Content</tr>
+                <tr>Sender</tr>
+            </thead>
+            <tbody>
+                @foreach (ESBCommunitySite.Models.ContactInfo r in Model)
+                {
+                    <tr>
+                        <td>@r.Recipient</td>
+                        <td>@r.MessageText</td>
+                        <td>@r.Sender</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
 </body>
 </html>
 

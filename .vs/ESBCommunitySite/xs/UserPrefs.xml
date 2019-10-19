@@ -1,22 +1,25 @@
 ﻿<Properties StartupConfiguration="{B7E038DC-4685-4664-8234-6EACAA9E69DF}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="ESBCommunitySite/Controllers/HomeController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="ESBCommunitySite/Views/Home/Contact.cshtml">
     <Files>
-      <File FileName="ESBCommunitySite/Controllers/HomeController.cs" Line="41" Column="10" />
-      <File FileName="ESBCommunitySite/Views/Home/Contact.cshtml" Line="30" Column="31" />
-      <File FileName="ESBCommunitySite/ContactInfo.cs" Line="8" Column="56" />
+      <File FileName="ESBCommunitySite/Views/Home/Contact.cshtml" Line="34" Column="36" />
+      <File FileName="ESBCommunitySite/Views/Home/ShowMail.cshtml" Line="23" Column="20" />
+      <File FileName="ESBCommunitySite/Views/Home/Index.cshtml" Line="10" Column="9" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="ESBCommunitySite" expanded="True">
             <Node name="ESBCommunitySite" expanded="True">
-              <Node name="Controllers" expanded="True">
-                <Node name="HomeController.cs" selected="True" />
-              </Node>
+              <Node name="Controllers" expanded="True" />
               <Node name="Models" expanded="True" />
               <Node name="Views" expanded="True">
-                <Node name="Home" expanded="True" />
+                <Node name="Home" expanded="True">
+                  <Node name="Contact.cshtml" selected="True" />
+                </Node>
                 <Node name="Info" expanded="True" />
+              </Node>
+              <Node name="wwwroot" expanded="True">
+                <Node name="css" expanded="True" />
               </Node>
             </Node>
           </Node>

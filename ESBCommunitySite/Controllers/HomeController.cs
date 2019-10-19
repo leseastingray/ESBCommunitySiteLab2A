@@ -30,9 +30,16 @@ namespace ESBCommunitySite.Controllers
         [HttpPost]
         public ViewResult Contact(ContactInfo contactInfo)
         {
-            // stores contact messages
-            MailBox.AddMail(contactInfo);
-            return View();
+            if (ModelState.IsValid)
+            {
+                // stores contact messages
+                MailBox.AddMail(contactInfo);
+                return View(contactInfo);
+            }
+            else
+            {
+                return View();
+            }
         }
 
         public ViewResult ShowMail()
